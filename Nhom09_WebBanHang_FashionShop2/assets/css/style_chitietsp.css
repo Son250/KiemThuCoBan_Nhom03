@@ -1,0 +1,756 @@
+.table {
+    vertical-align: baseline;
+}
+
+td {
+    vertical-align: middle;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+* {
+    margin: 0px auto;
+    padding: 0px;
+    font-family: roboto;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    margin: 0px auto;
+    padding: 0px;
+    max-width: 1200px;
+}
+
+.content .info_prod {
+    display: flex;
+}
+
+.box_left {
+    flex-basis: 46%;
+}
+
+.box_right {
+    flex-basis: 60%;
+}
+
+.content .url {
+    margin: 50px 0px 30px 0px;
+}
+
+.content .url a {
+    color: #333;
+}
+
+.box_left .anh_to img {
+    width: 500px;
+}
+
+.box_left .anh_nho img {
+    width: 100px;
+    padding-top: 8px;
+    padding-right: 10px;
+}
+
+/* CSS SlideShow ảnh boxleft chi tiết sản phẩm  */
+
+#wrapper img {
+    display: block;
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+    margin: 0px;
+}
+
+#wrapper .show-picture {
+    height: 500px;
+    position: relative;
+
+}
+
+#wrapper .slider-nav div {
+    position: absolute;
+    top: 50%;
+    width: 26px;
+    height: 28px;
+    background-color: rgba(229, 229, 229, 60%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+#wrapper .slider-nav .next-btn {
+    right: 21px;
+}
+
+#wrapper .slider-nav div:hover {
+    background-color: rgba(207, 207, 207, 0.6);
+    color: aliceblue;
+
+}
+
+#wrapper ul.list-thumb li.thumb-item img {
+    width: 82px;
+    height: 82px;
+}
+
+#wrapper ul.list-thumb {
+    display: flex;
+    /* justify-content: space-between; */
+    list-style: none;
+    padding: 0px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#wrapper ul.list-thumb .thumb-item {
+    width: 80px;
+    border: 2px solid rgb(240, 224, 218);
+    opacity: 80%;
+    margin: 0px;
+    margin-right: 20px;
+}
+
+#wrapper ul.list-thumb .thumb-item.active {
+    border: 2px solid red;
+    opacity: 100%;
+}
+
+/* Css box_right  */
+.box_right .name_prod {
+    margin-bottom: 10px;
+}
+
+.box_right div {
+    padding-bottom: 10px;
+
+}
+
+.box_right .price_prod span.price_niemyet {
+    color: #6a6a6a;
+    text-decoration: line-through;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.box_right .price_prod span.price_sale {
+    color: #ff0000;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.tinh_trang span {
+    color: green;
+    font-weight: 700;
+}
+
+.mau ul li {
+    display: inline-block;
+}
+
+.mau_sac ul {
+    list-style: none;
+}
+
+.mau_sac ul li {
+    display: inline-block;
+}
+
+.mau_sac ul li a {
+    text-align: center;
+    display: block;
+    border: 1px solid #e5e5e5;
+    width: 26px;
+    height: 26px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    /* padding-top: 5px; */
+    color: black;
+}
+
+.mau_sac .Đen {
+    background-color: black;
+}
+
+.mau_sac .Trắng {
+    background-color: white;
+}
+
+.mau_sac .Xanhlá {
+    background-color: green;
+}
+
+.mau_sac .Xanhbiển {
+    background-color: blue;
+}
+
+.mau_sac .Đỏ {
+    background-color: red;
+}
+
+.mau_sac .Vàng {
+    background-color: yellow;
+}
+
+
+.size_sp ul {
+    list-style: none;
+}
+
+.size_sp ul li {
+    display: inline-block;
+}
+
+.size_sp ul li a {
+    text-align: center;
+    display: block;
+    border: 1px solid #e5e5e5;
+    width: 26px;
+    /* height: 30px; */
+    margin: 5px;
+    padding: 5px;
+    border-radius: 3px;
+    /* padding-top: 5px; */
+    color: black;
+}
+
+/* CSS cho viền border khi chọn màu */
+.color_sp .mau_sac ul li a.selected {
+    border: 2px solid #333333;
+    /* Đổi màu và kích thước border theo mong muốn */
+}
+
+/* CSS cho viền border khi chọn size */
+.size_sp ul li a.selected {
+    border: 2px solid #3e3e3e;
+    /* Đổi màu và kích thước border theo mong muốn */
+}
+
+
+
+.box_right input[type="number"] {
+    width: 38px;
+    height: 28px;
+    text-indent: 8px;
+}
+
+.add_cart button {
+    text-decoration: none;
+    color: white;
+    background: rgb(203, 200, 17);
+    padding: 12px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0px;
+    margin: 5px 0px;
+
+}
+
+.buy-now {
+    border: 1px solid whitesmoke;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background: rgb(228, 3, 3);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+
+}
+
+
+.title_prod {
+    margin: 30px 0px 10px 0px;
+}
+
+.description_prod p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.binhluan .title_binhluan {
+    margin: 30px 0px;
+}
+
+.binhluan table thead {
+    background-color: #6a6a6a;
+    height: 30px;
+
+}
+
+.binhluan table {
+    width: 100%;
+
+}
+
+.binhluan table tbody {
+    background-color: #c4c4c4;
+}
+
+.binhluan table tbody td {
+    padding: 5px;
+}
+
+/* Input ở ngoài  */
+.form_bl input {
+    width: 300px;
+    height: 28px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-indent: 15px;
+    background-color: rgb(250, 250, 250);
+}
+
+.binhluan form button {
+    text-decoration: none;
+    cursor: pointer;
+    background: rgb(212, 212, 212);
+    padding: 5px 10px;
+    color: black;
+    border-radius: 5px;
+}
+
+.see_more {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.see_more h3 {
+    margin-bottom: 20px;
+}
+
+.see_more ul li {
+    display: inline-block;
+    border: 1px solid #333;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.see_more ul li .name_prod {
+    width: 150px;
+    height: 55px;
+    overflow: hidden;
+}
+
+.see_more ul li .name_prod a {
+    color: black;
+    font-size: 13px;
+}
+
+.see_more ul li .name_prod a:hover {
+    color: red;
+}
+
+.see_more ul li .img_prod img {
+    width: 150px;
+}
+
+.binhluan .box-content {
+    margin-left: 50px;
+}
+
+.binhluan .name_bl i {
+    font-size: 28px;
+}
+
+.binhluan .name_bl .name_kh_bl {
+    font-size: 16px;
+    padding: 0px 0px 5px 5px;
+}
+
+.binhluan .name_bl p {
+    color: #6a6a6a;
+    padding-left: 34px;
+    font-size: 13px;
+}
+
+.binhluan .noidung_bl {
+    padding: 5px 0px 0px 34px;
+    margin-bottom: 17px;
+}
+
+.binhluan .form_bl {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.binhluan .form_bl i {
+    font-size: 28px;
+    margin: 10px 5px 0px 0px;
+}
+
+
+/* CSS Cart  */
+.title_cart {
+    margin-top: 30px;
+}
+
+.gio_hang {
+    display: flex;
+    margin-top: 30px;
+}
+
+.table-cart {
+    /* margin-top: 40px; */
+    flex-basis: 70%;
+}
+
+.tienhanh_thanhtoan {
+    flex-basis: 40%;
+    height: 330px;
+    border-left: 2px solid #b6b6b6;
+}
+
+.table-cart table th {
+    text-align: left;
+    padding-left: 16px;
+}
+
+.table-cart table {
+    width: 100%;
+}
+
+.table-cart table a.xoa {
+    text-decoration: none;
+    background: #b1b1b1;
+    font-size: 10px;
+    padding: 5px 10px;
+    color: white;
+    position: absolute;
+    border-radius: 5px;
+    top: 34%;
+}
+
+.table-cart .ten_sp_cart {
+    width: 450px;
+    position: relative;
+}
+
+.table-cart .ten_sp_cart img {
+    margin-left: 43px;
+}
+
+input[name="input_slg_cart"] {
+    width: 48px;
+    margin-top: 0px;
+}
+
+.table-cart .th_tensp {
+    padding-left: 39px;
+    padding-bottom: 8px;
+}
+
+.table-cart table thead tr th {
+    /* border-bottom: 1px solid #333; */
+    text-transform: uppercase;
+}
+
+.table-cart table .name-prod {
+    text-decoration: none;
+    color: #333;
+}
+
+.table-cart table input {
+    height: 26px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.table-cart table a.xoa:hover {
+    text-decoration: none;
+    transition: all 0.5s;
+    background: rgb(200, 4, 4);
+    color: white;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+}
+
+.table-cart table a.pay {
+    text-decoration: none;
+    color: white;
+    background: green;
+    padding: 7px 12px;
+    margin-left: 50px;
+    border-radius: 5px;
+
+
+}
+
+.table-cart tbody {
+    font-size: 13px;
+}
+
+.table-cart thead {
+    font-size: 15px;
+}
+
+
+.table-cart span.name-prod {
+    text-decoration: none;
+    position: absolute;
+    top: 23%;
+    left: 135px;
+}
+
+.table-cart table tfoot tr {
+    font-weight: bold;
+}
+
+.text_red {
+    color: red;
+}
+
+.btn {
+    padding: 10px 50px;
+    background: black;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    /* margin-left: 20px; */
+    width: 100%;
+    margin-top: 40px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.table_thanhtoan {
+    margin-left: 35px;
+}
+
+.continue_sp {
+    padding: 10px 50px;
+    background: rgb(255, 255, 255);
+    color: #333;
+    border: 1px solid #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 0px;
+    width: 45%;
+    margin-top: 29px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 17px 0px;
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.mr_0 {
+    margin-right: 0px;
+    font-size: 14px;
+}
+
+.ml_0 {
+    margin-left: 0px;
+    color: #757575;
+}
+
+/* CSS Chọn Size, Màu Lần 2 */
+.size-button {
+    /* padding: 10px; */
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.size-button.selected {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.chonsize {
+    margin-left: 0px;
+    margin-right: 25px;
+}
+
+
+.color-bar {
+    display: flex;
+    margin-top: 10px;
+}
+
+.color-button {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: border-color 0.3s;
+    margin-top: 10px;
+    border: 1px solid #d4cdcd;
+}
+
+.color-button.Đen {
+    background-color: #000;
+}
+
+.color-button.Xanhlá {
+    background-color: green;
+}
+.color-button.Xanhbiển {
+    background-color: #84bbf2;
+}
+
+.color-button.Trắng {
+    background-color: white;
+}
+
+.color-button.Vàng {
+    background-color: #ffd700;
+}
+
+.color-button.Đỏ {
+    background-color: #ff0000;
+}
+
+.color-button.selected {
+    border-color: #4e4e4e;
+    border: 2px solid #4e4e4e;
+}
+
+.chonmau {
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-right: 25px;
+}
+
+.color-text {
+    display: flex;
+    margin-left: 100px;
+}
+
+
+.box_right form .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #363636;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.box_right form .button:hover {
+    background-color: #9C9C9C;
+    color: #fff;
+}
+
+/* CSS cho đơn mua  */
+.nav_donmua ul {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    align-items: center;
+    background: aliceblue;
+    margin-top: 30px;
+}
+
+.nav_donmua ul li a {
+    text-transform: initial;
+    color: black;
+    font-size: 15px;
+}
+
+.nav_donmua ul li a:hover {
+    /* text-transform: initial; */
+    color: orange;
+}
+
+.product_donmua .trang_thai ul {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+
+}
+.product_donmua {
+    margin-bottom: 20px;
+}
+.product_donmua hr {
+    color: #9C9C9C;
+}
+
+.product_donmua .trang_thai ul li a {
+    color: black;
+    font-weight: 600;
+}
+
+.product_donmua .trang_thai ul li a span {
+    color: #10ca10;
+}
+
+.product_mua {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product_mua ._prod img {
+    width: 70px;
+    border: 1px solid rgb(197, 197, 197);
+
+}
+
+
+._prod {
+    display: flex;
+    margin-top: 10px;
+}
+
+._prod .name_prod {
+    margin-left: 15px;
+}
+
+._prod .phan_loai {
+    color: #7e7e7e;
+    font-size: 14px;
+}
+.product_mua .price_prod .price {
+    font-size: 14px;
+    margin-top: 28px;
+}
+.product_mua .price_prod .price span:first-child {
+    text-decoration: line-through;
+    color: #7e7e7e;
+}
+.product_mua .price_prod .price span:last-child {
+    /* text-decoration: line-through; */
+    color: red;
+}
+
+.product_donmua .thanh_tien {
+    display: flex;
+    justify-content: end;
+}
+.product_donmua .thanh_tien span{
+   color: red;
+   font-size: 19px;
+}
