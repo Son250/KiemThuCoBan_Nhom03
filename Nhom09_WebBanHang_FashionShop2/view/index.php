@@ -107,7 +107,9 @@ include "_header.php";
                     }
                     if (isset($_POST['btnBinhluan'])) {
                         add_binhluan($_POST['noidung'], $_POST['iduser'], $_POST['idpro'], $_POST['datetime']);
-                        header("Location: ?act=chitietsp&idsp=" . $_GET['idsp']);
+                        // header("Location: ?act=chitietsp&idsp=" . $_GET['idsp']);
+                        $idsp = $_GET['idsp'];
+                        echo "<script> window.location.href= '?act=chitietsp&idsp=' + $idsp  </script>";
                     }
                     include "detail_prod.php";
                     break;
@@ -219,7 +221,8 @@ include "_header.php";
                     } elseif ($_POST['pt_thanhtoan'] == 'online') {
 
 
-                        header("location:../assets/vnpay_php/vnpay_pay.php");
+                        // header("location:../assets/vnpay_php/vnpay_pay.php");
+                        echo "<script> window.location.href = '../assets/vnpay_php/vnpay_pay.php' </script>";
                     }
                 }
 

@@ -74,7 +74,7 @@ function insert_bien_the($idsp, $idms, $idkt, $soluong)
     $sql = "INSERT INTO bien_the (id_sp,id_mau_sac, id_kich_thuoc, so_luong)
     VALUES ('$idsp','$idms','$idkt', '$soluong');";
     pdo_execute($sql);
-    // header('location:index.php');
+
 }
 function insert_hinhanh($url, $idsp)
 {
@@ -181,7 +181,7 @@ function update_sanpham($id, $iddm, $name, $price_niemyet, $price_sale, $mota, $
         $sql =  "UPDATE `sanpham` SET `name` = '{$name}', `price_niemyet` = '{$price_niemyet}', `price_sale` = '{$price_sale}', `mota` = '{$mota}', `iddm` = '{$iddm}' WHERE `sanpham`.`id` = $id";
     }
     pdo_execute($sql);
-    // header('location:index.php?act=dssanpham');
+  
 }
 
 function hard_delete_hinhanh($id)
@@ -213,13 +213,13 @@ function delete_bienthe($idsp){
 function update_bienthe($id, $id_mau_sac, $id_kich_thuoc, $so_luong)
 {
     insert_bien_the($id, $id_mau_sac, $id_kich_thuoc, $so_luong);
-    // header('location:index.php?act=dssanpham');
+   
 }
 // function update_hinhanh($id,$img_phu){
 //     $sql=  "UPDATE `hinhanh` SET `url` = '{$img_phu}' WHERE `hinhanh`.`id_sp` = $id";
 
 //     pdo_execute($sql);
-//     // header('location:index.php?act=dssanpham');
+
 // }
 
 //Sơn

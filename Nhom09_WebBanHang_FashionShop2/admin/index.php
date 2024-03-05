@@ -438,7 +438,8 @@ include 'menu.php';
                 break;
 
             case 'back-to-website':
-                header("location:../view/index.php");
+                // header("location:../view/index.php");
+                echo "<script> window.location.href= '../view/index.php'  </script>";
                 break;
 
             case 'test_loadall_sp':

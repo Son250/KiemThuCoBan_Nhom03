@@ -62,7 +62,8 @@ function delete_sp_buy($iduser)
 {
     $sql = "DELETE FROM cart WHERE id_user = $iduser";
     pdo_execute($sql);
-    header('location:?act=hoanthanh_tt');
+    // header('location:?act=hoanthanh_tt');
+    echo "<script> window.location.href= '?act=hoanthanh_tt'  </script>";
 }
 function load_sanpham_mua_ngay($idbt)
 {

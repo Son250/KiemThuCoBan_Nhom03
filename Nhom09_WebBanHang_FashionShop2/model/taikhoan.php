@@ -8,7 +8,8 @@ function dangnhap($user, $pass)
         $_SESSION['iduser'] = $taikhoan['id'];
         $_SESSION['role'] = $taikhoan['role'];
         $_SESSION['don_new'] = 0;
-        header('location:index.php');
+        // header('location:index.php');
+        echo "<script> window.location.href= 'index.php'  </script>";
     } else {
         return "Thông tin tài khoản sai !";
     }
@@ -21,7 +22,8 @@ function dangxuat()
         unset($_SESSION['iduser']);
         unset($_SESSION['role']);
         unset($_SESSION['so_sp_giohang']);
-        header('location:index.php');
+        // header('location:index.php');
+        echo "<script> window.location.href= 'index.php'  </script>";
     }
 }
 // function dangnhap($user, $pass)

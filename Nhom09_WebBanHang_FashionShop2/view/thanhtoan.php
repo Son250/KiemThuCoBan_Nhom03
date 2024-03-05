@@ -28,25 +28,16 @@
                         <label for="">Địa chỉ email (không bắt buộc)*</label>
                         <input type="text" required name="email" placeholder="Email của bạn">
                     </div>
-                    <!-- <div class="ip_in_bottom">
-                        <select name="" id="province">
-                        </select>
-
-                        <select name="" id="district">
-                            <option  value="">chọn quận</option>
-                        </select>
-
-                        <select name="" id="ward">
-                            <option   value="">chọn phường</option>
-                        </select>
-                        
-                    </div> -->
+            
                     <input type="text" hidden name="diachi" id="result">
                     <div class="ip_in_bottom">
                         <label for="">Tỉnh/Thành phố *</label>
                         <select name="" required id="province">
                             <option value="">Chọn tỉnh</option>
                             <option value="">Hà Nội</option>
+                            <option value="">Hồ Chí Minh</option>
+                            <option value="">Đà Nẵng</option>
+                            <option value="">Huế</option>
                         </select>
                     </div>
                     <div class="ip_in_bottom">
@@ -54,6 +45,11 @@
                         <select name="" required id="district">
                             <option value="">Chọn quận</option>
                             <option value="">Hà Đông</option>
+                            <option value="">Chương Mỹ</option>
+                            <option value="">Đống Đa</option>
+                            <option value="">Quốc Oai</option>
+                            <option value="">Sóc Sơn</option>
+                            <option value="">Yên Nghĩa</option>
                         </select>
                     </div>
                     <div class="ip_in_bottom">
@@ -61,6 +57,10 @@
                         <select name="" required id="ward">
                             <option value="">Chọn phường</option>
                             <option value="">Phú Nghĩa</option>
+                            <option value="">Trường Yên</option>
+                            <option value="">Tiên Phương</option>
+                            <option value="">Hữu Văn</option>
+                            <option value="">Ô kê</option>
                         </select>
                     </div>
                     <div class="ip_in_bottom">
@@ -84,13 +84,10 @@
                 $i = 0;
                 $tong = 0;
                 foreach ($count_sp_add as $count_sp) {
-                    // echo "<pre>";
-                    // print_r($count_sp);
+                
                     $i += $count_sp['so_sp'];
                 }
-                // $_SESSION['so_sp_giohang'] = $so_sp = $i;
-                // echo $so_sp;
-                // echo $i.'<br>';
+              
                 for ($j = 0; $j < $i; $j++) {
                     // echo $ds_sp_thanhtoan[$j]['id_bienthe'];
                     echo '<input type="text" hidden name="id_bienthe' . $j . '" value="' . $ds_sp_thanhtoan[$j]['id_bienthe'] . '">';

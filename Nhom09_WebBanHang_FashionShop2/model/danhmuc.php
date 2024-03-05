@@ -76,12 +76,14 @@ function delete_danhmuc($iddm)
 {
     $sql = "DELETE FROM danhmuc WHERE id =" . $iddm;
     pdo_execute($sql);
-    header("location: ?act=dsdm");
+    // header("location: ?act=dsdm");
+    echo "<script> window.location.href= '?act=dsdm'  </script>";
 }
 
 function edit_danhmuc($iddm, $name)
 {
     $sql = "UPDATE danhmuc SET name = '$name' WHERE id = $iddm";
     pdo_execute($sql);
-    header("location: ?act=dsdm");
+    // header("location: ?act=dsdm");
+    echo "<script> window.location.href= '?act=dsdm'  </script>";
 }
